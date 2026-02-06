@@ -1,0 +1,103 @@
+// Zed settings
+//
+// For information on how to configure Zed, see the Zed
+// documentation: https://zed.dev/docs/configuring-zed
+//
+// To see all of Zed's default settings without changing your
+// custom settings, run ⁠ zed: open default settings ⁠ from the
+// command palette (cmd-shift-p / ctrl-shift-p)
+//
+//
+//
+// "experimental.theme_overrides": {
+//   "background.appearance": "blurred",
+
+//   "background": "#4c464290",
+
+//   "editor.background": "#00000030",
+
+//   "editor.gutter.background": "#00000030",
+
+//   "tab_bar.background": "#00000030",
+
+//   "terminal.background": "#4c464290",
+
+//   "toolbar.background": "#00000030",
+
+//   "tab.active_background": "#00000030",
+
+//   "tab.inactive_background": "#00000000",
+
+//   "status_bar.background": "#00000030",
+
+//   "title_bar.background": "#00000030",
+
+//   // "panel.background": "#00000030",
+
+//   "border.variant": "#00000030",
+
+//   "scrollbar.track.border": "#00000030",
+
+//   "editor.active_line.background": "#00000030"
+// }
+{
+    "icon_theme": "JetBrains New UI Icons (Dark)",
+    "features": {
+      "edit_prediction_provider": "zed"
+    },
+    "agent": {
+      "always_allow_tool_actions": true,
+      "profiles": {
+        "master": {
+          "name": "master",
+          "tools": {},
+          "enable_all_context_servers": false,
+          "context_servers": {}
+        }
+      },
+      "default_profile": "ask",
+      "default_model": {
+        "provider": "copilot_chat",
+        "model": "claude-sonnet-4.5"
+      }
+    },
+    "vim_mode": true,
+    "ui_font_size": 16,
+    "buffer_font_size": 16,
+    "auto_fold_dirs": false,
+    "project_panel": {
+      "auto_fold_dirs": false
+    },
+    "theme": {
+      "mode": "dark",
+      "light": "Catppuccin Iced Latte (Blur)",
+      "dark": "macOS Classic Dark"
+    },
+    // UI Font. Use ".SystemUIFont" to use the default system font (SF Pro on macOS),
+    // or ".ZedSans" for the bundled default (currently IBM Plex)
+    "ui_font_family": "JetBrains Mono",
+    "ui_font_weight": 400, // Font weight in standard CSS units from 100 to 900.
+    // "ui_font_size": 16,
+  
+    // Buffer Font - Used by editor buffers
+    // use ".ZedMono" for the bundled default monospace (currently Lilex)
+    "buffer_font_family": "JetBrains Mono", // Font name for editor buffers
+    // "buffer_font_size": 15, // Font size for editor buffers
+    "buffer_font_weight": 400, // Font weight in CSS units [100-900]
+    // Line height "comfortable" (1.618), "standard" (1.3) or custom: ⁠ { "custom": 2 } ⁠
+    "buffer_line_height": "comfortable",
+  
+    // Terminal Font Settings
+    "terminal": {
+      "font_family": "JetBrains Mono",
+      "font_size": 17,
+      // Terminal line height: comfortable (1.618), standard(1.3) or ⁠ { "custom": 2 } ⁠
+      "line_height": "comfortable"
+    },
+  
+    // Agent Panel Font Settings
+    "agent_ui_font_size": 15,
+    "autosave": "on_focus_change",
+    "format_on_save": "on"
+  }
+  
